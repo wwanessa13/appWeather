@@ -8,6 +8,8 @@ st.set_page_config(page_title="Clima", layout="centered")
 
 st.title("🌤️ Consulta de Clima")
 
+api_key = st.secrets["api_key"]
+
 modo = st.radio("Tipo de consulta:", ["Atual", "Histórico"])
 cidade = st.text_input("Digite a cidade:", "Navirai")
 
